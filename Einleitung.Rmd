@@ -1,0 +1,92 @@
+---
+title: "Einleitung"
+author: "Niclas Richter"
+date: '2023-03-29'
+output: html_document
+---
+
+## Nur 7,4% Inflationsrate? 
+Seit Monaten steigen die Preise und Lebenshaltungskosten in Deutschland
+und auch der EU. Gemessen wird dies mit der Inflationsrate die bei 7,4% Prozent (März 2023)
+liegt und vermittelt den Eindruck, dass die Preise im Durchschnitt um 7,4% Prozent
+gestiegen sind. Trotzdem habe viele den Eindruck, dass die Preise stärker
+steigen. Die Antwort auf diese "gefühlte Inflation" ist recht einfach, die
+Preise für die einzelnen Produkte steigen bzw. fallen unterschiedlich. Auch gibt
+diese die Änderung zum Vorjahresmonat an und nicht die Änderung zu einem
+weiter zurückliegenden Datum. Dies kann
+man auch in den veröffentlichten Daten des Statitischen Bundesamtes sehen, aber 
+diese sind etwas umständlich in der Bedienung.
+
+Auch am Familientisch wurde dies bei mir viel diskutiert, um es diplomatisch
+auszudrücken. Damit man nicht die Kassenbons von verschiedenen Jahren aufheben
+muss um zu sehen, wie sich die Preise entwickeln, habe ich ein kleines
+Dashboard programmiert. Hier können die veröffentlichten Preisindizes einfach
+veranschaulicht werden. 
+
+Wenn man oben auf das Tab *Datenvisualisierung* geht, dann kann man einfach
+Produkte eingeben und schon sieht man den Verlauf der Preise. Im Tab *Tabelle*
+ist es möglich sich die Daten auszuwählen und nach verschiedenen 
+Kategorien zu filtern. Auch gibt es einen Downloadbutton zum Download der Daten
+als *csv*-Datei.
+
+
+## Was ist Inflation?
+
+Inflation ist ein Anstieg des allgemeinen Preisniveaus von Waren und 
+Dienstleistungen in einer Volkswirtschaft über einen bestimmten Zeitraum. Es ist
+ein wichtiger Indikator für die Gesundheit der Wirtschaft, da eine moderate 
+Inflation ein Signal für Wachstum und Expansion sein kann, während eine zu hohe 
+Inflation das Potenzial hat, die Wirtschaft zu destabilisieren.
+
+Die Inflation wird in der Regel anhand eines Preisindexes gemessen, der die 
+Preisveränderungen von Waren und Dienstleistungen im Laufe der Zeit erfasst. Der
+am häufigsten verwendete Preisindex ist der Verbraucherpreisindex (VPI), der die
+durchschnittliche Veränderung der Preise einer bestimmten Gruppe von Waren und 
+Dienstleistungen misst, die von einem durchschnittlichen Haushalt gekauft 
+werden. Der VPI wird in vielen Ländern von Regierungsbehörden wie der 
+US-amerikanischen Verbraucherpreisindex (CPI) und dem deutschen 
+Verbraucherpreisindex berechnet und veröffentlicht.
+
+Um den Verbraucherpreisindex zu berechnen, wählt man eine Basisperiode und weist
+dieser einen Wert von 100 zu. Dann werden die Preise einer Gruppe von Waren und 
+Dienstleistungen in der aktuellen Periode mit den Preisen in der Basisperiode 
+verglichen und die prozentuale Veränderung berechnet. Diese Veränderung wird
+dann gewichtet und zusammengefasst, um den aktuellen VPI-Wert zu bestimmen.
+
+Andere Preisindizes, die zur Messung der Inflation verwendet werden, sind 
+beispielsweise der Produzentenpreisindex (PPI), der die Veränderungen der Preise
+von Waren und Dienstleistungen misst, die von Unternehmen produziert werden, 
+sowie der Bruttoinlandsproduis-Deflator (BIP-Deflator), der die 
+Preisveränderungen aller im Land produzierten Waren und Dienstleistungen misst.
+
+Die Messung der Inflation ist wichtig, um die Auswirkungen von Preisänderungen 
+auf den Lebensstandard der Verbraucher zu verstehen, 
+Investitionsentscheidungen zu treffen und die Geldpolitik zu formulieren.
+
+## Wie kommen die 7,4% zu stande?
+Im Verbraucherpreisindex werden ca. 650 Güterarten erfasst und für diese die 
+durchschnittlichen Preise in diesem Monat ermittelt. Mit einem Dreisatz
+wird anschließend das Vehältnis zum Basisjahr berechnet. Danach werden diese
+über einen gewichteten Mittelwert zu einem Index zusammengefasst. Die Gewichte
+kann man als durchschnittliche Anteile an Konsumausgaben betrachten, die über
+andere Statistiken und Befragungen ermittelt werden.
+
+Die genannte Inflationsrate ist dann die Veränderungsrate zum Vorjahresmonat, d.h.
+die Inflationsrate im März 2023 ist die Veränderungsrate zum März 2022. Mehr
+Informationen bietet das Statistische Bundesamt in der [Methodenbeschreibung](https://www.destatis.de/DE/Themen/Wirtschaft/Preise/Verbraucherpreisindex/Methoden/_inhalt.html)
+des Verbraucherpreisindex.
+
+
+## Rechtliche Hinweise:
+Datenquelle: Statistisches Bundesamt (Destatis), Genesis-Online; Datenlizenz by-2-0; eigene Berechnung/eigene Darstellung. Tabellen zum Verbraucherpreisindex in Deutschland.
+EVAS-Nummer: 61111.
+
+Link zur Datenlizenz: [https://www.govdata.de/dl-de/by-2-0](https://www.govdata.de/dl-de/by-2-0)
+
+Dieses Werk kann mit der obigen Lizenz weiterverwendet werden.
+
+Mit dieser Website werden keine geschäftlichen oder gewerblichen Interessen
+verfolgt.
+
+Autor: Niclas Richter
+

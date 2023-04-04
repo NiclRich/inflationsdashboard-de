@@ -1,0 +1,20 @@
+---
+title: "Plot_Beschreibung"
+author: "Niclas Richter"
+date: '2023-03-31'
+output: html_document
+---
+
+## Wie nutzt man dieses Tool?
+Links kannst du in das Feld den Namen eines oder mehrere Produkte eingeben.
+Danach sieht man sofort die Werte für die Produkte in der Mitte. Der Wert 100
+gibt den durchschnittlichen Preis für dieses Gut an, den man im Jahr 2020
+dafür zahlen musste, dieses Preisniveau nennt man den Basiswert für das
+Basisjahr 2020. Dies ist mit der grau-gestrichelten Linie eingezeichnet.
+
+Man kann beispielsweise die Auswirkungen auf das 9€-Ticket sehen, oder auch 
+vergleichen, ob Fahrräder oder E-Bikes teurer geworden sind.
+
+Wenn man über die Grafik geht, dann werden auch die einzelnen Werte angezeigt.
+Oben rechts ist auch ein Menü, mit dem man in die Grafik hineinzoomen kann oder
+diese auch als png-Datei downloaden kann.

@@ -1,0 +1,19 @@
+---
+title: "Beschreibung_Tabelle"
+author: "Niclas Richter"
+date: '2023-03-31'
+output: html_document
+---
+# Wie nutze ich diese Tabelle?
+Hier kann man sich die Werte als Tabelle anzeigen lassen. In der ersten Spalte
+kann man nach den Produkten filtern, oder auch nach Preisanstiegen innerhalb
+eines Monates oder Jahres. Die linkeste Spalte ist der Produktcode innerhalb
+des Warenkorbes. Ist dieser 10-Stellig, so ist dies ein einzelnen Produkt. Ist
+dieser kürzer, so ist es ein sogenanntes Aggregat. Darin werden einzelne Produkte
+über eine gewichtete Summe zusammengefasst. Dies bedeutet, dass die Preise für
+Milch beispielsweise so stark eingehen, wieviel im Monat dafür anteilig ausgegeben wird.
+
+Wenn man oben auf den Button *CSV klickt, dann kann man die aktuellen
+Daten auch downloaden. Bitte beachte, dass die im Tab *Einfühung* 
+genannte Datenlizenz auch
+für diese Daten weiterhin gilt.
