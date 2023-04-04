@@ -3,6 +3,7 @@ title: "Einleitung"
 author: "Niclas Richter"
 date: '2023-03-29'
 output: html_document
+runtime: shiny
 ---
 
 ## Nur 7,4% Inflationsrate? 
@@ -84,6 +85,8 @@ EVAS-Nummer: 61111.
 Link zur Datenlizenz: [https://www.govdata.de/dl-de/by-2-0](https://www.govdata.de/dl-de/by-2-0)
 
 Dieses Werk kann mit der obigen Lizenz weiterverwendet werden.
+Der Source Code ist auf
+[Github](https://github.com/NiclRich/inflationsdashboard-de) zu finden.
 
 Mit dieser Website werden keine geschäftlichen oder gewerblichen Interessen
 verfolgt.

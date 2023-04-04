@@ -29,35 +29,43 @@ plot_price_index <- function(data, product_names, start_month, end_month) {
                  date_labels = "%m-%y") +
     ggtitle("Preisentwicklung der Produkte")
 }
+
 #' load price data from genesis online
 #'
 #' load the price price data from genesis online (the database from the
 #' Federal Office of Statistics in Germany) with the package *Wiesbaden*. It loads
 #' the data for the COICOP at level 10, 5 and 2.
 #' 
-#' @return list of dataframes containing the index values
-load_data_genesis <- function() {
-  # login data for the database, adjust for your login credentials
-  genesis_login <- c(db = "de", user = "XXXXX", password = "XXXXXXXX")
-
+#' It can place a copy of the data on the local storage. The data is then stored
+#' in *genesis_data.Rds*.
+#' 
+#' @param local_storage Logical, indicates whether the data should be stored as
+#' the file *genesis_data.Rds* locally.
+#' 
+#' @return list of data frames containing the index values
+load_data_genesis <- function(local_storage = FALSE) {
+  # login data for the database
+  genesis_login <- c(db = "de", user = "XXXXXXXXXXX", password = "XXXXXXXXXXXXX")
+  
   # retrieve the data for the COICOP goods
   #  COICOP = Classification Of Individual COnsumption by Purpose
   COICOP10_price_index <- retrieve_data(tablename = "61111BM007", genesis = genesis_login) 
   COICOP5_price_index <- retrieve_data(tablename = "61111BM005", genesis = genesis_login)
   COICOP2_price_index <- retrieve_data(tablename = "61111BM002", genesis = genesis_login)
-
+  
   # rename columns
   COICOP10_price_index <- rename(COICOP10_price_index, Code = CC13Z1)
   COICOP5_price_index <- rename(COICOP5_price_index, Code = CC13A5)
   COICOP2_price_index <- rename(COICOP2_price_index, Code = CC13A2)
-
+  
   # make a list of price indices and return them
   price_indices <- list(
     "COICOP10_price_index" = COICOP10_price_index,
     "COICOP5_price_index" = COICOP5_price_index,
     "COICOP2_price_index" = COICOP2_price_index
   )
-
+  
+  if (local_storage) saveRDS(price_indices, file = "./genesis_data.Rds")
   return(price_indices)
 }
 
@@ -67,10 +75,13 @@ load_data_genesis <- function() {
 #' their names (*Codes.csv* and *VPI_data.csv*) which are downloaded from
 #' the website of the German Federal Office for Statistics and join the
 #' data from Genesis Online. 
-transform_data <- function() {
+#' 
+#' @param local_storage = FALSE, if TRUE, then it loads it locally, otherwise
+#' it is downloaded from genesis online.
+transform_data <- function(local_storage = FALSE) {
   
   # load data from genesis online
-  price_data <- load_data_genesis()
+  price_data <- if(local_storage) readRDS("./genesis_data.Rds") else load_data_genesis() 
   
   # load COICOP Codes
   Codes <- read_delim("Codes.csv",

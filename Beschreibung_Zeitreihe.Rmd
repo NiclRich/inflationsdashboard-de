@@ -3,6 +3,7 @@ title: "Plot_Beschreibung"
 author: "Niclas Richter"
 date: '2023-03-31'
 output: html_document
+runtime: shiny
 ---
 
 ## Wie nutzt man dieses Tool?
@@ -17,4 +18,4 @@ vergleichen, ob Fahrräder oder E-Bikes teurer geworden sind.
 
 Wenn man über die Grafik geht, dann werden auch die einzelnen Werte angezeigt.
 Oben rechts ist auch ein Menü, mit dem man in die Grafik hineinzoomen kann oder
-diese auch als png-Datei downloaden kann.
+diese auch als *png*-Datei downloaden kann.
